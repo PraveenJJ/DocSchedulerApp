@@ -48,7 +48,7 @@ class _SignInPageState extends State<SignInPage> {
         body: Center(
           child: Container(
               width: 350,
-              height: 520,
+              height: 450,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),
@@ -80,21 +80,21 @@ class WelcomeLogoWidgetState extends State<WelcomeLogoWidget> {
       padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 0.0),
       child: Column(
         children: [
-          const Icon(
-            Icons.local_hospital_outlined,
-            size: 150,
-          ),
-          const SizedBox(height: 10),
-          const Text(
-            'Doctor\'s Appointment',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
-          ),
-          const SizedBox(height: 10),
+          // Logo container
           Container(
-            padding: const EdgeInsets.fromLTRB(30.0, 0.0, 0.0, 0.0),
-            child: const Text(
-              'Sign-in to schedule your first doctor\'s appointment!',
-              style: TextStyle(fontSize: 15),
+            padding: const EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
+            child: const Row(
+              children: [
+                Icon(
+                  Icons.local_hospital_outlined,
+                  size: 100,
+                ),
+                SizedBox(height: 10),
+                Text(
+                  'DocSchedule',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                ),
+              ],
             ),
           ),
           const SizedBox(height: 20),
@@ -120,7 +120,7 @@ class SignInFormState extends State<SignInForm> {
     String password = _passwordController.text;
 
     // Load JSON file
-    String jsonContent = await rootBundle.loadString('users/users.json');
+    String jsonContent = await rootBundle.loadString('assets/users/users.json');
     List<dynamic> users = json.decode(jsonContent);
 
     // Check if username and password match
@@ -169,6 +169,14 @@ class SignInFormState extends State<SignInForm> {
     return Container(
       child: Column(
         children: [
+          Container(
+            width: 310,
+            padding: const EdgeInsets.fromLTRB(40.0, 0.0, 0.0, 20.0),
+            child: const Text(
+              'Login to book your appointment!',
+              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            ),
+          ),
           // username container
           Container(
             width: 310,
@@ -185,7 +193,7 @@ class SignInFormState extends State<SignInForm> {
               ),
             ),
           ),
-          const SizedBox(height: 5.0),
+          const SizedBox(height: 10.0),
           // password container
           Container(
             width: 310,
@@ -216,7 +224,7 @@ class SignInFormState extends State<SignInForm> {
                 )
               ),
               child: const Text(
-                'Sign In',
+                'Login',
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.normal,
