@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../HomePage.dart';
+import '../home_page.dart';
 
 class SignInForm extends StatefulWidget {
   const SignInForm({super.key});
@@ -12,8 +12,8 @@ class SignInForm extends StatefulWidget {
 }
 
 class SignInFormState extends State<SignInForm> {
-  final TextEditingController _usernameController = TextEditingController();
-  final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _usernameController = TextEditingController(text: 'user1');
+  final TextEditingController _passwordController = TextEditingController(text: 'user1');
 
   Future<void> _submitForm() async {
     String username = _usernameController.text;
@@ -78,6 +78,7 @@ class SignInFormState extends State<SignInForm> {
                 fontSize: 17,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
+
                 // shadows: [
                 //   Shadow(
                 //     blurRadius: 4.0,
