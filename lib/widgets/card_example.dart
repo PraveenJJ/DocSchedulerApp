@@ -11,10 +11,10 @@ class CardExample extends StatelessWidget {
           const SizedBox(height: 30),
           Container(
             height: 130,
-            padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
+            width: 370,
+            padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
             child: Card(
               child: Column(
-                mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   const ListTile(
                     leading: Icon(Icons.local_hospital),
@@ -22,7 +22,7 @@ class CardExample extends StatelessWidget {
                     subtitle: Text('Specialist in Psychology'),
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       TextButton(
                         child: const Text('Book Now'),
@@ -43,10 +43,10 @@ class CardExample extends StatelessWidget {
           const SizedBox(height: 15),
           Container(
             height: 130,
-            padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
+            width: 370,
+            padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
             child: Card(
               child: Column(
-                mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   const ListTile(
                     leading: Icon(Icons.local_hospital),
@@ -54,7 +54,7 @@ class CardExample extends StatelessWidget {
                     subtitle: Text('Specialist in Pediatrician'),
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       TextButton(
                         child: const Text('Book Now'),

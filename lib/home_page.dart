@@ -90,7 +90,6 @@ class HomePageState extends State<HomePage> {
               alignment: Alignment.center
           ),
         ),
-
         /* Card view */
         child: const CardExample(),
       )
