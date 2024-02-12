@@ -11,8 +11,8 @@ class CardExample extends StatelessWidget {
           const SizedBox(height: 30),
           Container(
             height: 130,
-            width: 370,
-            padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+            width: 330,
+            padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
             child: Card(
               child: Column(
                 children: <Widget>[
@@ -43,8 +43,8 @@ class CardExample extends StatelessWidget {
           const SizedBox(height: 15),
           Container(
             height: 130,
-            width: 370,
-            padding: const EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+            width: 330,
+            padding: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
             child: Card(
               child: Column(
                 children: <Widget>[

@@ -36,7 +36,7 @@ class SignInFormState extends State<SignInForm> {
       // Navigate to home screen page
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => HomePage()),
+        MaterialPageRoute(builder: (context) => HomePage(username: username,)),
       );
     } else {
       // Show error message
