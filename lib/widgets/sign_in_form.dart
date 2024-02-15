@@ -70,13 +70,13 @@ class SignInFormState extends State<SignInForm> {
       child: Column(
         children: [
           Container(
-            width: 310,
-            padding: const EdgeInsets.fromLTRB(28.0, 0.0, 0.0, 20.0),
+            width: 285,
+            padding: const EdgeInsets.fromLTRB(34.0, 0.0, 0.0, 10.0),
             child: const Text(
               'Login to book your appointment!',
               style: TextStyle(
-                fontSize: 17,
-                fontWeight: FontWeight.bold,
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
                 color: Colors.black,
 
                 // shadows: [
@@ -91,7 +91,7 @@ class SignInFormState extends State<SignInForm> {
           ),
           // username container
           Container(
-            width: 300,
+            width: 280,
             height: 50,
             padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 0.0),
             decoration: BoxDecoration(
@@ -106,10 +106,10 @@ class SignInFormState extends State<SignInForm> {
               ),
             ),
           ),
-          const SizedBox(height: 10.0),
+          const SizedBox(height: 13.0),
           // password container
           Container(
-            width: 300,
+            width: 280,
             height: 50,
             padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 0.0),
             decoration: BoxDecoration(
@@ -125,16 +125,16 @@ class SignInFormState extends State<SignInForm> {
               ),
             ),
           ),
-          const SizedBox(height: 10.0),
+          const SizedBox(height: 13.0),
           Container(
-            width: 300,
-            height: 50,
+            width: 280,
+            height: 45,
             child: ElevatedButton(
               onPressed: _submitForm,
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue[900],
                   shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(12)))),
+                      borderRadius: BorderRadius.all(Radius.circular(10)))),
               child: const Text(
                 'Login',
                 style: TextStyle(

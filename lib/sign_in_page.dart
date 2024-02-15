@@ -29,8 +29,8 @@ class SignInPageState extends State<SignInPage> {
             ),
             child: Center(
                 child: Container(
-              width: 340,
-              height: 420,
+              width: 320,
+              height: 330,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),

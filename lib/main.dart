@@ -1,4 +1,4 @@
-import 'package:doc_scheduler_app/widgets/sign_in_page.dart';
+import 'package:doc_scheduler_app/sign_in_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

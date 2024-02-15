@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
-class CardExample extends StatelessWidget {
-  const CardExample({super.key});
+class HomeCards extends StatelessWidget {
+
+
+
+  const HomeCards({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(
         children: [
-          const SizedBox(height: 30),
+          const SizedBox(height: 15),
           Container(
             height: 130,
             width: 330,

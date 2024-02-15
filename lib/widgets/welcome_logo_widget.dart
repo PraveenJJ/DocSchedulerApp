@@ -15,12 +15,12 @@ class WelcomeLogoWidgetState extends State<WelcomeLogoWidget> {
         children: [
           // Logo container
           Container(
-            padding: const EdgeInsets.fromLTRB(25.0, 40.0, 0.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(40.0, 20.0, 0.0, 0.0),
             child: const Row(
               children: [
                 Icon(
                   Icons.local_hospital_outlined,
-                  size: 100,
+                  size: 70,
                   color: Colors.black,
                   // shadows: [
                   //   Shadow(
@@ -49,7 +49,7 @@ class WelcomeLogoWidgetState extends State<WelcomeLogoWidget> {
               ],
             ),
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
         ],
       ),
     );
