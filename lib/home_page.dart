@@ -82,36 +82,7 @@ class HomePageState extends State<HomePage> {
           )),
 
       /* Body image */
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [
-              Colors.white,
-              Colors.blue.shade500,
-              Colors.blue.shade700,
-              Colors.blue.shade900
-            ], // Replace with your desired colors
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ),
-
-        /* Card view */
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Container(
-            padding: const EdgeInsets.fromLTRB(30.0, 10.0, 0.0, 0.0),
-            child: Text(
-              'Welcome, ${widget.username}',
-              style: const TextStyle(
-                  color: Colors.black87,
-                  fontSize: 28,
-                  fontWeight: FontWeight.bold),
-            ),
-          ),
-          const HomeCards()
-        ]),
-      ),
-
+      body: _pages[_selectedIndex],
       //Bottom Navigation
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
