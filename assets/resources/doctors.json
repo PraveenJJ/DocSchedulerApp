@@ -1,0 +1,26 @@
+[
+	{
+		"doctorName": "Dr. John Doe",
+		"speciality": "Specialist in Psychology",
+		"description": null,
+		"fee": 2000.00
+	},
+	{
+		"doctorName": "Dr. Jane Smith",
+		"speciality": "Specialist in Pediatrician",
+		"description": null,
+		"fee": 2000.00
+	},
+	{
+		"doctorName": "Dr. Margot Robbie",
+		"speciality": "Specialist in Radiology",
+		"description": null,
+		"fee": 2000.00
+	},
+	{
+		"doctorName": "Dr. Will Smith",
+		"speciality": "Specialist in Chiropractic",
+		"description": null,
+		"fee": 2000.00
+	}
+]
